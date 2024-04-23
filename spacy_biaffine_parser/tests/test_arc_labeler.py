@@ -102,13 +102,15 @@ def test_overfitting_IO():
     nlp.add_pipe("sentencizer")
     nlp.add_pipe("arc_predicter")
     nlp.add_pipe("arc_labeler")
+
     train_examples = []
     for t in TRAIN_DATA:
         train_examples.append(Example.from_dict(nlp.make_doc(t[0]), t[1]))
 
+    fix_random_seed(0)
+
     optimizer = nlp.initialize(get_examples=lambda: train_examples)
 
-    fix_random_seed(0)
     for i in range(150):
         losses = {}
         nlp.update(
