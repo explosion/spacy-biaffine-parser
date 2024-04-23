@@ -1,4 +1,5 @@
 from typing import List, Optional
+
 from thinc.types import Floats2d
 
 def chu_liu_edmonds(scores: Floats2d, root_vertex: int) -> List[Optional[int]]: ...

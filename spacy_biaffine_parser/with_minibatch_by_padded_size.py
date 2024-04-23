@@ -1,8 +1,9 @@
-from typing import Callable, Generic, List, Optional, Sized, Tuple, TypeVar, cast
 from dataclasses import dataclass
+from typing import (Callable, Generic, List, Optional, Sized, Tuple, TypeVar,
+                    cast)
+
 from spacy.training.batchers import minibatch_by_padded_size
 from thinc.api import Model
-
 
 OutT = TypeVar("OutT")
 SizedInT = TypeVar("SizedInT", bound=Sized)

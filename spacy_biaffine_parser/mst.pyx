@@ -26,13 +26,16 @@
 #   the main algorithm, since the next recursion of Chu-Lui-Edmonds
 #   would discard the lower-scoring edges anyway.
 
-from cython.operator cimport dereference as deref, preincrement as inc
+from cython.operator cimport dereference as deref
+from cython.operator cimport preincrement as inc
 from libc.math cimport INFINITY, isfinite
 from libcpp cimport bool
 from libcpp.unordered_set cimport unordered_set
 from libcpp.utility cimport pair
 from libcpp.vector cimport vector
+
 import numpy as np
+
 
 cdef int NO_PARENT = -1
 

@@ -1,22 +1,23 @@
 # cython: infer_types=True, binding=True
 
 from itertools import islice
-import numpy as np
 from typing import Callable, Dict, Iterable, Optional
+
+import numpy as np
 import spacy
 from spacy import Language, Vocab
 from spacy.errors import Errors
 from spacy.pipeline.dep_parser import parser_score
-from spacy.pipeline.trainable_pipe cimport TrainablePipe
-from spacy.tokens.token cimport Token
-from spacy.tokens.doc cimport Doc
-from spacy.training import Example, validate_get_examples, validate_examples
-from spacy.util import minibatch
-import srsly
-from thinc.api import Config, Model, Ops, Optimizer
-from thinc.api import to_numpy
-from thinc.types import Floats2d, Ints1d, Tuple
 
+from spacy.pipeline.trainable_pipe cimport TrainablePipe
+from spacy.tokens.doc cimport Doc
+from spacy.tokens.token cimport Token
+
+import srsly
+from spacy.training import Example, validate_examples, validate_get_examples
+from spacy.util import minibatch
+from thinc.api import Config, Model, Ops, Optimizer, to_numpy
+from thinc.types import Floats2d, Ints1d, Tuple
 
 default_model_config = """
 [model]

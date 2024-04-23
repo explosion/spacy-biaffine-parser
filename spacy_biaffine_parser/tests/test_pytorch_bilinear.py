@@ -3,8 +3,8 @@ import pytest
 pytest.importorskip("torch")
 
 import torch
-
 from torch.nn import Bilinear as TorchBilinear
+
 from spacy_biaffine_parser.pytorch_bilinear import Bilinear
 
 

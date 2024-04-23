@@ -1,18 +1,10 @@
-from typing import Callable, List, Optional, Tuple, TypeVar, Union
-from typing import cast
+from typing import Callable, List, Optional, Tuple, TypeVar, Union, cast
+
 from spacy import registry
 from spacy.tokens.doc import Doc
-from thinc.api import Model, chain, get_width, torch2xp
-from thinc.api import with_getitem, xp2torch
+from thinc.api import Model, chain, get_width, torch2xp, with_getitem, xp2torch
 from thinc.shims.pytorch_grad_scaler import PyTorchGradScaler
-from thinc.types import (
-    ArgsKwargs,
-    Floats2d,
-    Floats3d,
-    Floats4d,
-    Ints1d,
-)
-
+from thinc.types import ArgsKwargs, Floats2d, Floats3d, Floats4d, Ints1d
 
 from .with_minibatch_by_padded_size import with_minibatch_by_padded_size
 from .with_pad_seq_unpad_matrix import with_pad_seq_unpad_matrix
@@ -22,9 +14,8 @@ from .with_splits import with_splits
 # Torch installed.
 PyTorchPairwiseBilinearModel: Optional[type]
 try:
-    from .pytorch_pairwise_bilinear import (
-        PairwiseBilinearModel as PyTorchPairwiseBilinearModel,
-    )
+    from .pytorch_pairwise_bilinear import \
+        PairwiseBilinearModel as PyTorchPairwiseBilinearModel
 except ImportError:
     PyTorchPairwiseBilinearModel = None
 

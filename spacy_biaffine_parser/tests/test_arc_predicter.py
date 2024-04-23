@@ -7,7 +7,6 @@ from thinc.api import NumpyOps, fix_random_seed
 
 from spacy_biaffine_parser.arc_predicter import _split_lazily_doc
 
-
 pytest.importorskip("torch")
 
 

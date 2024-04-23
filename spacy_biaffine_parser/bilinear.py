@@ -2,11 +2,10 @@ from typing import List, Optional, Tuple, cast
 
 from spacy import registry
 from spacy.tokens.doc import Doc
-from thinc.api import Model, chain, get_width, list2array, torch2xp
-from thinc.api import with_getitem, xp2torch
+from thinc.api import (Model, chain, get_width, list2array, torch2xp,
+                       with_getitem, xp2torch)
 from thinc.shims.pytorch_grad_scaler import PyTorchGradScaler
 from thinc.types import ArgsKwargs, Floats2d, Ints1d
-
 
 # Ensure that the spacy-biaffine-parser package can register entry points without
 # Torch installed.

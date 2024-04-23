@@ -1,10 +1,9 @@
 import pytest
-from thinc.api import fix_random_seed
 from spacy import util
 from spacy.lang.en import English
 from spacy.language import Language
 from spacy.training import Example
-
+from thinc.api import fix_random_seed
 
 pytest.importorskip("torch")
 

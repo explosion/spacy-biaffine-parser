@@ -1,26 +1,27 @@
 # cython: infer_types=True, binding=True
 
-from typing import Callable, Dict, Iterable, List, Optional
-from itertools import islice
 from collections import deque
+from itertools import islice
+from typing import Callable, Dict, Iterable, List, Optional
+
 import numpy as np
 import spacy
 from spacy import Language, Vocab
 from spacy.errors import Errors
 from spacy.pipeline.dep_parser import parser_score
+
 from spacy.pipeline.trainable_pipe cimport TrainablePipe
-from spacy.tokens.token cimport Token
 from spacy.tokens.doc cimport Doc
-from spacy.training import Example, validate_get_examples, validate_examples
-from spacy.util import minibatch
+from spacy.tokens.token cimport Token
+
 import srsly
-from thinc.api import Config, Model, NumpyOps, Ops, Optimizer
-from thinc.api import to_numpy
+from spacy.training import Example, validate_examples, validate_get_examples
+from spacy.util import minibatch
+from thinc.api import Config, Model, NumpyOps, Ops, Optimizer, to_numpy
 from thinc.types import Floats1d, Floats2d, Ints1d, Tuple
 
-from .mst import mst_decode
 from ._util import lengths2offsets
-
+from .mst import mst_decode
 
 NUMPY_OPS = NumpyOps()
 

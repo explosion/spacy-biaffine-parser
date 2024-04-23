@@ -1,8 +1,7 @@
 from thinc.api import noop
 
-from spacy_biaffine_parser.with_minibatch_by_padded_size import (
-    with_minibatch_by_padded_size,
-)
+from spacy_biaffine_parser.with_minibatch_by_padded_size import \
+    with_minibatch_by_padded_size
 
 from .util import memoize
 

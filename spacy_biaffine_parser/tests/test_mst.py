@@ -1,8 +1,8 @@
-from hypothesis import given
 import hypothesis.extra.numpy as hn
-from hypothesis.strategies import floats, integers
 import numpy as np
 import pytest
+from hypothesis import given
+from hypothesis.strategies import floats, integers
 
 from spacy_biaffine_parser.mst import chu_liu_edmonds
 

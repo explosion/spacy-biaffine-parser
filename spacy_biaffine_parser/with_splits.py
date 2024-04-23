@@ -1,4 +1,5 @@
 from typing import Callable, List, Optional, Tuple
+
 from thinc.api import Model, Ops
 from thinc.types import Floats2d, Ints1d
 
