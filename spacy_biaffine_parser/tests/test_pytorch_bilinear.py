@@ -5,7 +5,7 @@ pytest.importorskip("torch")
 import torch
 
 from torch.nn import Bilinear as TorchBilinear
-from spacy_experimental.biaffine_parser.pytorch_bilinear import Bilinear
+from spacy_biaffine_parser.pytorch_bilinear import Bilinear
 
 
 def test_bilinear_against_torch():

@@ -5,7 +5,7 @@ from spacy.language import Language
 from spacy.training import Example
 from thinc.api import NumpyOps, fix_random_seed
 
-from spacy_experimental.biaffine_parser.arc_predicter import _split_lazily_doc
+from spacy_biaffine_parser.arc_predicter import _split_lazily_doc
 
 
 pytest.importorskip("torch")

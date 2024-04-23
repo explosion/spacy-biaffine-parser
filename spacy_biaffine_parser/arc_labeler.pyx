@@ -20,7 +20,7 @@ from thinc.types import Floats2d, Ints1d, Tuple
 
 default_model_config = """
 [model]
-@architectures = "spacy-experimental.Bilinear.v1"
+@architectures = "spacy-biaffine-parser.Bilinear.v1"
 hidden_width = 64
 
 [model.tok2vec]

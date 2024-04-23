@@ -8,7 +8,7 @@ class Bilinear(nn.Module):
     This module provides functionality similar torch.nn.Bilinear.
     Differences are that this version uses a separate bias for
     both inputs and is more efficient. See:
-    https://github.com/explosion/spacy-experimental/pull/47"""
+    https://github.com/explosion/spacy-biaffine-parser/pull/47"""
 
     def __init__(
         self,

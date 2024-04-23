@@ -8,7 +8,7 @@ from thinc.shims.pytorch_grad_scaler import PyTorchGradScaler
 from thinc.types import ArgsKwargs, Floats2d, Ints1d
 
 
-# Ensure that the spacy-experimental package can register entry points without
+# Ensure that the spacy-biaffine-parser package can register entry points without
 # Torch installed.
 PyTorchBilinearModel: Optional[type]
 try:

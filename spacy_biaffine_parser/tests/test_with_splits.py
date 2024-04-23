@@ -1,5 +1,5 @@
 import numpy
-from spacy_experimental.biaffine_parser.with_splits import with_splits
+from spacy_biaffine_parser.with_splits import with_splits
 
 from .util import memoize
 

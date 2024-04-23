@@ -2,7 +2,7 @@ from typing import Callable, Tuple
 import numpy
 from thinc.api import Model
 
-from spacy_experimental.biaffine_parser.with_pad_seq_unpad_matrix import (
+from spacy_biaffine_parser.with_pad_seq_unpad_matrix import (
     InnerInT,
     InnerOutT,
     with_pad_seq_unpad_matrix,

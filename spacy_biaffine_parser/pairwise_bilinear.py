@@ -18,7 +18,7 @@ from .with_minibatch_by_padded_size import with_minibatch_by_padded_size
 from .with_pad_seq_unpad_matrix import with_pad_seq_unpad_matrix
 from .with_splits import with_splits
 
-# Ensure that the spacy-experimental package can register entry points without
+# Ensure that the spacy-biaffine-parser package can register entry points without
 # Torch installed.
 PyTorchPairwiseBilinearModel: Optional[type]
 try:

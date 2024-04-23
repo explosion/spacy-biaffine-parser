@@ -27,7 +27,7 @@ NUMPY_OPS = NumpyOps()
 
 default_model_config = """
 [model]
-@architectures = "spacy-experimental.PairwiseBilinear.v1"
+@architectures = "spacy-biaffine-parser.PairwiseBilinear.v1"
 hidden_width = 64
 nO = 1
 
