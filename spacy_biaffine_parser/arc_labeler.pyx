@@ -36,7 +36,7 @@ subword_features = true
 DEFAULT_ARC_LABELER_MODEL = Config().from_str(default_model_config)["model"]
 
 @Language.factory(
-    "experimental_arc_labeler",
+    "arc_labeler",
     assigns=["token.dep"],
     default_config={
         "model": DEFAULT_ARC_LABELER_MODEL,

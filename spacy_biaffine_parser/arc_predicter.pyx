@@ -44,7 +44,7 @@ subword_features = true
 DEFAULT_ARC_PREDICTER_MODEL = Config().from_str(default_model_config)["model"]
 
 @Language.factory(
-    "experimental_arc_predicter",
+    "arc_predicter",
     assigns=["token.head"],
     default_config={
         "model": DEFAULT_ARC_PREDICTER_MODEL,
