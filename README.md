@@ -6,8 +6,7 @@
 [![pypi Version](https://img.shields.io/pypi/v/spacy-biaffine-parser.svg?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/project/spacy-biaffine-parser/)
 
 This package provides a biaffine dependency parser, similar to that proposed in [Deep Biaffine
-Attention for Neural Dependency Parsing](Deep Biaffine Attention for Neural
-Dependency Parsing) (Dozat & Manning, 2016).
+Attention for Neural Dependency Parsing](https://arxiv.org/abs/1611.01734) (Dozat & Manning, 2016).
 
 ## Installation
 
